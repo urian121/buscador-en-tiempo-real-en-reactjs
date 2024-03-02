@@ -13,7 +13,7 @@
 
 #### Resultado final
 
-![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/buscador-en-reactjs.png)
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/buscador-en-tiempo-real-en-reactjs.png)
 
 ### Expresiones de Gratitud 🎁
 
