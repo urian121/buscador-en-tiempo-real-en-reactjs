@@ -76,6 +76,11 @@ const Buscador = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <div className="menu mt-5">
+        {data.length > 0 && (
+          <p className="total-results">
+            Total Resultados: {filteredData.length}
+          </p>
+        )}
         <div className="menu-group">
           {filteredData.map((item, index) => {
             // Genera el precio original aleatorio
