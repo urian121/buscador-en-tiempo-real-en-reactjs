@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import InputBuscador from "../components/InputBuscador";
+//import BuscadorBasico from "../components/BuscadorBasico";
 
 const Buscador = () => {
   const [data, setData] = useState([]);
@@ -60,7 +61,7 @@ const Buscador = () => {
   };
 
   /**
-   * La función filteredData filtra la matriz data buscando elementos cuya propiedad strCategory contiene el término de búsqueda searchTerm, sin distinguir entre mayúsculas y minúsculas. El resultado es una nueva matriz con los elementos que coinciden con el criterio de búsqueda.
+   * La función filteredData filtra la matriz data buscando elementos cuya propiedad strCategory contiene el término de búsqueda searchTerm, sin distinguir entre mayúsculas y minúsculas. * El resultado es una nueva matriz con los elementos que coinciden con el criterio de búsqueda.
    * La función filteredData se ejecuta cada vez que hay un cambio en el estado data o searchTerm, ya que está definida como una constante que depende de estos estados.
    */
   const filteredData = data.filter((item) => {
@@ -69,11 +70,11 @@ const Buscador = () => {
 
   return (
     <div className="container">
+      {/* <BuscadorBasico /> */}
       <InputBuscador
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-
       <div className="menu mt-5">
         <div className="menu-group">
           {filteredData.map((item, index) => {
